@@ -1,0 +1,25 @@
+JavaScript was invented by Brendan Eich in 1995, and became an ECMA standard in 1997.
+
+ECMA-262 is the official name of the standard. ECMAScript is the official name of the language.
+
+
+Try it Yourself.
+
+world's most popular programming language.
+programming language of the Web.
+Easy to learn.
+
+-------------
+Why Study JavaScript?
+JavaScript is one of the 3 languages all web developers must learn:
+
+   1. HTML = content of web pages
+   2. CSS = layout of web pages
+   3. JavaScript= behavior of web pages
+
+   https://www.w3schools.com/js/js_examples.asp
+
+   Everything is up to you.
+   Always make sure you understand all the "Try-it-Yourself" examples.
+
+   The only way to become a clever programmer is to: Practice. Practice. Practice. Code. Code. Code !
