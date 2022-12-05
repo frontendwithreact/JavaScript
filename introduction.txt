@@ -1,0 +1,3 @@
+JavaScript Can Change HTML Content
+JavaScript can change HTML attribute values.
+-JavaScript accepts both double and single quotes:

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>change html content</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+ <h2>What Can JavaScript Do?</h2>
+
+<p id="demo">JavaScript can change HTML content.</p>
+<button type="button" id="change">Click Me!</button>
+<hr>
+<!-- <button id="on">Trun On</button>
+<button id="off">Trun Off</button>
+
+<img id="myImage" src="images/bulboff.gif" style="width:100px"> -->
+
+<div class="lay">
+    <button onclick="document.getElementById('myImage').src='images/bulbon.gif'">Turn on the light</button>
+    <button onclick="document.getElementById('myImage').src='images/bulboff.gif'">Turn off the light</button>
+    <img src="images/bulboff.gif" id ="myImage" alt="">
+</div>
+
+<script>
+    const changeText = document.getElementById("change");
+    
+    changeText.addEventListener('click',changeTxt);
+
+    function changeTxt(){
+        document.getElementById("demo").innerHTML = "Welcome to JavaScript World";
+    }
+
+</script>
+</body>
+</html>
