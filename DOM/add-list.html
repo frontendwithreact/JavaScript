@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>add list</title>
+    <style>
+        .blogs{
+            border: 2px solid rebeccapurple;
+            border-radius: 10px;
+            padding: 20px;
+            font-size: 18px;
+            font-weight: 200;
+            font-family: 'Courier New', Courier, monospace;
+
+        }
+    </style>
+</head>
+<body>
+    <section class="blog" id="header-section">
+        <header>
+            <h2>Blogs</h2>
+            <ul id="blog-lists">
+                <li>Blog-1</li>
+                <li>Blog-2</li>
+                <li>Blog-3</li>
+                <li>Blog-4</li>
+            </ul>
+        </header>
+    </section>
+    <script>
+            // create element
+            const li = document.createElement('li');
+            li.innerText = 'Welcome to our tour';
+
+            // where to 
+            const ul = document.getElementById('blog-lists');
+            ul.appendChild(li);
+
+              // add article
+        const article = document.createElement('article');
+        article.classList.add('blogs');
+        // const h3 = document.createElement('h3');
+        // h3.innerText = 'Welcome to DOM tour!';
+        // const p = document.createElement('p');
+        // p.innerText = `Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!
+        // Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!`;
+        // article.appendChild(h3);
+        // article.appendChild(p);
+
+        article.innerHTML = `
+            <h2> Welcome to JavaScript Object Document Model </h2>
+            <p> Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!
+        Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!Vitae a error culpa quas quos tempora. Ipsa iusto, nostrum inventore cupiditate molestiae dolorum!</p>
+        `;
+
+        const headerSection =document.getElementById('header-section');
+              headerSection.appendChild(article);
+
+
+            ul.style.color = 'red';
+            ul.style.border = '2px solid green';
+            ul.style.width = '50%';
+            ul.style.borderRadius = '10px';
+            ul.style.listStyle = 'none';
+            ul.style.padding = '20px';
+
+    </script>
+</body>
+</html>

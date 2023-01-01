@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to my blog website.</h1>
+    </header>
+    <section>
+        <!-- article*3>h3{My awesome Blog-$}+p>lorem -->
+        <article class="blog">
+
+            <h3>My awesome Blog-1</h3>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse iure unde ex, ipsam voluptatem quam minus numquam debitis optio amet corrupti repudiandae eaque harum perferendis magnam quas, id molestias animi!</p>
+        </article>
+        <article class="blog">
+            <h3 id="second-title">My awesome Blog-2</h3>
+            <p>Explicabo, vero accusamus error dignissimos praesentium illo porro facilis ipsa cumque natus quam provident eum quod earum, odit aperiam! Facilis quaerat rem itaque sunt numquam at inventore exercitationem tempora atque!</p>
+        </article>
+        <article class="blog">
+            <h3>My awesome Blog-3</h3>
+            <p>Repudiandae, facere consequatur provident debitis praesentium pariatur exercitationem ea necessitatibus ex eos, sed optio labore libero recusandae aut accusamus. Asperiores atque a dolore rem iste omnis possimus qui delectus vero!</p>
+        </article>
+    </section>
+    <script>
+        // const student ={
+        //     age: 15,
+        //     height: 60
+        // }
+        const blogTitles = document.getElementsByTagName('h3');
+        // console.log(blogTitles);
+
+        for(const h3 of blogTitles){
+            // console.log(h3);
+        }
+
+        const blogDetails = document.getElementsByTagName('p');
+
+        for(const p of blogDetails){
+            // console.log(p.innerText);
+        }
+
+        const secondTitle = document.getElementById('second-title');
+
+        secondTitle.style.color = 'green';
+        secondTitle.style.backgroundColor = 'salmon';
+        secondTitle.style.padding = '10px';
+        secondTitle.innerText = 'I am having hard time describing programming language';
+        secondTitle.style.textAlign ='center';
+        secondTitle.style.borderRadius = '10px';
+
+
+        const blogs = document.getElementsByClassName('blog');
+
+        for(const blog of blogs){
+            // console.log(articleBlog);
+            blog.style.border ='2px solid red';
+            blog.style.borderRadius = '10px';
+            blog.style.margin = '5px';
+            blog.style.padding = '5px';
+
+        }
+
+        
+    </script>
+</body>
+</html>

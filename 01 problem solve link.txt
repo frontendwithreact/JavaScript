@@ -2,3 +2,6 @@
 https://www.mathsisfun.com/
 https://www.digitalocean.com/community/tutorials/how-to-use-the-switch-statement-in-javascript
 https://sebhastian.com/javascript-console-input/
+
+1. AnaToVori()
+https://toolsfun.com/units/weight/ana/vori
